@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sound Chat</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+
+<!-- ===========================================================================
+
+============================================================================ -->
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Soundchat</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div id="nav-menu" class="collapse navbar-collapse flex-row-reverse">
+          <div class="navbar-nav ml-auto mb-2 mb-lg-0" >
+            <a id="select-artist-link" class="nav-link" href="select-artist.html">Select Artist</a>
+            <a id="my-songs-link"      class="nav-link" href="my-songs.html">My Songs</a>
+            <a id="add-song-link"      class="nav-link" href="add-song.html">Add Song</a>
+            <a id="sign-in-link"       class="nav-link" href="sign-in.html">Sign In</a>
+            <a id="sign-out-link"      class="nav-link">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1 id="artist-name" class="fancy-h1 mt-4"></h1>
+    <img class="logo" src="assets/logo.png" />
+  </header>
+
+
+  <!-- =========================================================================
+
+  ========================================================================== -->
+
+
+  <main class="container-fluid">
+
+
+    <select id="song-select" class="form-select mx-auto mb-5" style="max-width: 600px">
+      <option selected>-Select Song</option>
+    </select>
+
+
+    <audio id="audio-component" class="mb-5" controls></audio>
+
+
+
+    <form id="add-comment-form" class="mx-auto mb-5 p-3 bg-white border border-dark rounded" style="max-width: 600px">
+
+      <div class="mb-3">
+        <label>Comment:</label>
+        <textarea id="comment-text" class="form-control"></textarea>
+      </div>
+
+
+      <div class="d-grid">
+        <button class="btn btn-primary">ADD COMMENT</button>
+      </div>
+    </form>
+
+
+    <div id="comments-container" class="mx-auto mb-5" style="max-width: 600px"></div>
+  </main>
+
+  <!-- =========================================================================
+
+  ========================================================================== -->
+
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

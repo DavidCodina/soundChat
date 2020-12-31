@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../assets/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/Montserrat-Black.ttf);
+}
+
+
+/* =============================================================================
+                             Reset Styles
+============================================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* https://css-tricks.com/snippets/css/hide-scrollbar-in-edge-ie-1011/ */
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  line-height: 1.5;
+  color: #333;
+  background-color: rgb(243,242,247);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+main {
+  /* flex: 1 1 0%; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 16px;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+iframe { border: none; }
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  width: 90%;
+  margin: 0 auto 50px auto;
+  font-size: 16px;
+  background-color: rgb(240,240,240);
+  border: 2px solid #333;
+  border-radius: 25px;
+  overflow:scroll;
+}
+
+/* Override Bootstrap margin & padding */
+[class*="col"], [class*="row"]{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* =============================================================================
+                              Utility Classes
+============================================================================= */
+
+
+.fancy-h1 {
+  position: relative;
+  margin: 0;
+  padding: 0px 25px;
+  color: snow;
+  text-align: center;
+  font-size: 50px;
+  font-family: Montserrat;
+  letter-spacing: 3px;
+  line-height: 1.25;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: violet;
+  text-shadow: -3px 3px 6px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+
+
+.fancy-h2 {
+  margin: 0 0 25px 0;
+  color: snow;
+  font-size: 40px;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #61DAFB;
+  text-shadow: -2px 2px 4px rgba(0,0,0,0.15);
+}
+
+.article {
+  width: 90%;
+  margin: 0 auto 50px auto;
+  padding: 25px;
+  background-color: #FFF;
+  border: 2px solid #61DAFB;
+  border-radius: 25px;
+}
+
+.logo {
+  display: block;
+  max-width: 400px;
+  margin: -100px auto 0 auto;
+}
+
+#sign-out-link {
+  cursor: pointer;
+}
+
+#my-songs-link,
+#add-song-link,
+#sign-in-link,
+#sign-out-link {
+  display:none;
+}
+
+
+/* https://developers.google.com/identity/branding-guidelines */
+#google-login-button {
+  color: #FFF;
+  background-color: rgb(66,133,244);
+  border-color: rgb(66,133,244);
+}
+
+#facebook-login-button {
+  color: #FFF;
+  background-color: rgb(59,89,152);
+  border-color: rgb(59,89,152);
+}
+
+audio {
+  display: block;
+  width: 100%;
+
+  max-width: 600px;
+  min-height: 75px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #FFF;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+
+
+audio:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+/* =============================================================================
+
+============================================================================= */
